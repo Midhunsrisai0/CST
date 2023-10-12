@@ -1789,5 +1789,20 @@ img {
 
 /* Text color for card headers */
 .cselibfaculty-text-white {
-  color: #fff !important;
+  color: #fff !important;
+}
+
+ul{
+	list-style-type: none !important;
+}
+ol{
+	list-style-type: none !important;
+}
+ul li{
+	text-align: center;
+	font-weight: 500;
+}
+ol li{
+	text-align: center;
+	font-weight: 500;
 }
