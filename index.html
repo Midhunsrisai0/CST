@@ -348,8 +348,8 @@
 				<div class=" nav-content">
 
 					<!-- Board of Studies Table -->
-					<div class="table-responsive table-striped  table-hover tab4-table mb-4 table-bordered">
-						<table class="table bos-table" class="tab4-table">
+					<div class="table-responsive table-striped  table-hover tab4-table mb-4">
+						<table class="table bos-table table-bordered table-striped" class="tab4-table">
 							<thead>
 								<tr class="tab4-tr">
 									<th class="tab4-th">S.No</th>
@@ -506,7 +506,7 @@
 						align-items: center;flex-direction: column;">
 							<h3 class="text-center">JG Lab</h3>
 							
-							<table class="table-responsive table-hover table-striped tab4-table" style="max-width: max-content;">
+							<table class="table-responsive table-hover table-striped tab4-table table-bordered table-bordered" style="max-width: max-content;">
 								<thead>
 									<tr class="tab4-tr">
 										<th class="tab4-th">S.No</th>
@@ -536,7 +536,7 @@
 							<h3>EF Codd Lab</h3>
 							
 
-							<table class="table-responsive table-hover table-striped tab4-table" style="max-width: max-content; ">
+							<table class="table-responsive table-hover table-striped tab4-table table-bordered" style="max-width: max-content; ">
 								<thead>
 									<tr>
 										<th class="tab4-th">S.No</th>
@@ -565,7 +565,7 @@
 							</table>
 							<h3>Linus Torvalds Lab</h3>
 
-							<table class="table-responsive table-hover table-striped tab4-table" style="max-width: max-content; ">
+							<table class="table-responsive table-hover table-striped tab4-table table-bordered" style="max-width: max-content; ">
 								<thead>
 									<tr>
 										<th class="tab4-th">S.No</th>
@@ -592,7 +592,7 @@
 							</table>
 							<h3>PG CP Lab</h3>
 
-							<table class="table-responsive table-hover table-striped tab4-table" style="max-width: max-content; ">
+							<table class="table-responsive table-hover table-striped tab4-table table-bordered" style="max-width: max-content; ">
 								<thead>
 									<tr>
 										<th class="tab4-th">S.No</th>
@@ -620,7 +620,7 @@
 							</table>
 							<h3>R&D Lab</h3>
 
-							<table class="table-responsive table-hover table-striped tab4-table" style="max-width: max-content;">
+							<table class="table-responsive table-hover table-striped tab4-table table-bordered" style="max-width: max-content;">
 								<thead>
 									<tr>
 										<th class="tab4-th">S.No</th>
@@ -669,7 +669,7 @@
 								</tbody>
 							</table>
 							<h3>Pink Lab</h3>
-							<table class="table-responsive table-hover table-striped tab4-table" style="max-width: max-content;">
+							<table class="table-responsive table-hover table-striped tab4-table table-bordered" style="max-width: max-content;">
 								<thead>
 									<tr>
 										<th class="tab4-th">S.No</th>
@@ -727,7 +727,7 @@
 								</tbody>
 							</table>
 							<h3>Green Lab</h3>
-							<table class="table-responsive table-hover table-striped tab4-table" style="max-width: max-content;">
+							<table class="table-responsive table-hover table-striped tab4-table table-bordered" style="max-width: max-content;">
 								<thead>
 									<tr>
 										<th class="tab4-th">S.No</th>
@@ -756,7 +756,7 @@
 								</tbody>
 							</table>
 							<h3>Brown Lab</h3>
-							<table class="table-responsive table-striped tab4-table table-bordered" style="max-width: max-content;">
+							<table class="table-responsive table-striped tab4-table" style="max-width: max-content;">
 								<thead>
 									<tr>
 										<th class="tab4-th">S.No</th>
@@ -953,8 +953,8 @@
 		<!----------------------------------------TAB 6 CONTENT STARTS------------->
 		<div class="tab-pane" id="tab6">
 			<div class="container mt-4  tab-content" style="border-width: 2px; ">
-				<h2 style="color: #850209; text-align: center;margin-bottom: 30PX;">MoUs</h2>
-				<h3>A. MOUs with Industries</h3>
+				<h2 style="color: #850209; text-align: center; margin-bottom: 30PX;">MoUs</h2>
+				<h3 style="text-align: center;">A. MOUs with Industries</h3>
 				<div class="nav-content" style="display: flex;justify-content: center; align-items: center;">
 
 					<table class="table tab4-table table-striped  table-responsive table-bordered mou-table">
@@ -1056,7 +1056,7 @@
 					</table>
 				</div>
 
-				<h3 style="text-align: left;">B. Interaction with the Industry</h3>
+				<h3 style="text-align: center;">B. Interaction with the Industry</h3>
 				<div class="nav-content">
 					<ul>
 						<li>
@@ -1103,8 +1103,32 @@
 		<div class="tab-pane" id="tab7">
 			<div class="container tab-content" style="border-width: 3px;">
 				<h2 style="color: #850209; text-align: center;margin-bottom: 30PX;">Faculty Development Programs</h2>
-				<div class="p-5">
-				<div class="section">
+				<div class="px-5 mt-5">
+					<details open>
+				<summary>FDP Attended</summary>
+				<div class="nav-content">
+						<ul class="fdp-list">
+							<li class="fdp-item">
+								FDPs attended by the Faculty 2021-22 - <a href="http://srivasaviengg.ac.in/uploads/cst/FDP%20Attended%20by%20the%20faculty%20during%20the%20Academic%20year%202021-2022_CST.pdf" id="pdfDownloader2">View</a>
+							</li>
+						</ul>
+					</div>
+			</details>
+			</div>
+				<div class="px-5 ">
+					<details>
+					<summary>FDPs/ Workshops/ Training Programmes Conducted</summary>
+								<div class="nav-content">
+					<ul class="fdp-list">
+						<li class="fdp-item">
+							FDPs conducted by the Department to the Faculty - <a href="http://srivasaviengg.ac.in/uploads/cse_extra_activities/cse_FDPSconducted%20by%20the%20facultys.pdf" target="_blank" id="pdfDownloader9">View</a>
+						</li>
+						
+					</ul>
+				</div>
+			</details>
+				</div>
+				<!-- <div class="section">
 					<h4>FDP Attended</h4>
 					<div class="nav-content">
 						<ul class="fdp-list">
@@ -1113,8 +1137,8 @@
 							</li>
 						</ul>
 					</div>
-				</div>
-				<h4>FDPs/ Workshops/ Training Programmes Conducted</h4>
+				</div> -->
+				<!-- <h4>FDPs/ Workshops/ Training Programmes Conducted</h4>
 				<div class="nav-content">
 					<ul class="fdp-list">
 
@@ -1123,10 +1147,10 @@
 						</li>
 						
 					</ul>
-				</div>
+				</div> -->
 				<div>
 					<div class="nav-content" style="margin-top: 30px;">
-						<h3>Gallery</h3>
+						<h3 style="text-align: center;">Gallery</h3>
 
 						<div class="container">
 							<div class="row" style="display: flex;
@@ -1538,7 +1562,7 @@
 					<summary>Conference Publications</summary>
 					<div class="m-3 ">
 
-						<p>Conferences during the Academic Year 2022-23 -<a
+						<p style="text-align: center; font-weight: 500;">Conferences during the Academic Year 2022-23 -<a
 							href="http://srivasaviengg.ac.in/uploads/cst/CST%20-conferences%20(22-23).pdf" target="_blank"
 							style="color: #850209;font-weight: 500;">
 							</h3>View
@@ -1551,22 +1575,22 @@
 				<details>
 					<summary>Roll of Honour</summary>
 					<div>
-						<div class="tab10-table-responsive table-striped table-bordered">
-							<table class="tab10-table table-striped table-bordered">
+						<div class="text-center">
+							<table class="table-responsive table-hover table-striped tab4-table tab4-table table-bordered">
 								<thead>
-									<tr>
-										<th>Batch</th>
-										<th>Roll Number</th>
-										<th>Name of The Student</th>
-										<th>CGPA/Aggregate</th>
+									<tr class="tab4-tr">
+										<th class="tab4-th">Batch</th>
+										<th class="tab4-th">Roll Number</th>
+										<th class="tab4-th">Name of The Student</th>
+										<th class="tab4-th">CGPA/Aggregate</th>
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>2019-23</td>
-										<td>19A81A0645</td>
-										<td>Naga Divya Jyothi. V</td>
-										<td>83.69</td>
+									<tr class="tab4-tr">
+										<td class="tab4-td">2019-23</td>
+										<td class="tab4-td">19A81A0645</td>
+										<td class="tab4-td">Naga Divya Jyothi. V</td>
+										<td class="tab4-td">83.69</td>
 									</tr>
 								
 								
@@ -1618,12 +1642,12 @@
 					</div>
 				</details>
 			</div>
-			<div class="tab10-table-responsive table-striped table-bordered">
+			<div class="tab10-table-responsive table-striped ">
 				<details>
 					<summary>GATE</summary>
 				</details>
 			</div>
-			<div class="tab10-table-responsive table-striped table-bordered">
+			<div class="tab10-table-responsive table-striped ">
 				<details>
 					<summary>GRE</summary>
 				</details>
@@ -1702,19 +1726,19 @@
 
 							<details open>
 								<summary>Placements for Batch 2020-24</summary>
-								<li style="list-style:none;margin-left: 10px;">Placements for Batch 2020-24-<a
+								<li style="list-style:none;margin-left: 10px; text-align: center; font-weight: 500;">Placements for Batch 2020-24-<a
 										href="http://srivasaviengg.ac.in/uploads/cst/2020-24%20CST%20PLACEMENTS%20DATA%20-23.7.2023.pdf"
 										target="_blank" id="pdfDOWNLOADER11">View More</a></li>
 							</details>
 							<details>
 								<summary>Placements for Batch 2019-23</summary>
-								<li style="list-style:none;margin-left: 10px;">Placements for Batch 2019-23-<a
+								<li style="list-style:none;margin-left: 10px; text-align: center; font-weight: 500;">Placements for Batch 2019-23-<a
 										href="http://srivasaviengg.ac.in/uploads/cst/2019-23%20CST%20PLACEMENTS%20DATA.pdf"
 										target="_blank" id="pdfDOWNLOADER11">View More</a></li>
 
 							</details>
 													</div>
-					<div class="nav-content" style="margin-top: 30px;">
+					<div class="nav-content tab-content" style="margin-top: 30px; border-width: 3px;">
 						<h2 style="margin-top: 3px;">Gallery</h2>
 						<div class="nav-content mb-5">
 							<div class="container">
@@ -1727,17 +1751,17 @@
 									</div>
 									<div class="col-12 col-lg-5 m-3">
 										<img src="assets\img\cst placement.jpg" alt="Image 1" class="img-fluid" >
-										<h4 class="text-center my-3 text-success">Roll No:19A81A0650 <br>
-											Name:P. Jahnavi Sri Naidu<br>
-											Company:IBM<br>
-											Package:12LPA</h4>
+										<h4 class="text-center my-3 text-success"><strong>Roll No:</strong> 19A81A0650 <br>
+											<strong>Name:</strong> P. Jahnavi Sri Naidu<br>
+											<strong>Company:</strong> IBM<br>
+											<strong>Package:</strong> 12LPA</h4>
 									</div>
 									<div class="col-12 col-lg-5 m-3 py-3">
 										<img src="assets\img\cst placement.jpg" alt="Image 2" class="img-fluid" >
-										<h4 class="text-center my-3 text-success">Roll No:19A81A0650 <br>
-											Name:P. Jahnavi Sri Naidu <br>
-											Company:TCS CODEVITA <br>
-											Package:7LPA</h4>
+										<h4 class="text-center my-3 text-success"><strong>Roll No:</strong> 19A81A0650 <br>
+											<strong>Name:</strong> P. Jahnavi Sri Naidu <br>
+											<strong>Company:</strong> TCS CODEVITA <br>
+											<strong>Package:</strong> 7LPA</h4>
 									</div>
 									
 									
@@ -1756,12 +1780,12 @@
 
 		<!----------------------------------------TAB 12 STARTS------------------->
 		<div class="tab-pane" id="tab12">
-			<div class="container mt-4">
+			<div class="container mt-4 tab-content">
 				<h2 class="text-center mt-5 pt-3" style="color: #850209;">Merit Scholarships and Academic Toppers</h2>
 			
 
 
-				<h3 style="margin: 20px auto">Merit Scholarships / Academic Toppers</h3>
+				<h3 style="margin: 20px auto;text-align: center;">Merit Scholarships / Academic Toppers</h3>
 
 				<div class="nav-content row" style="display: flex;
 					justify-content: center;
@@ -1804,7 +1828,7 @@
 				</div>
 
 				<!-- Image Gallery -->
-				<h3 style="margin: 20px auto">Image Gallery</h3>
+				<h3 style="margin: 20px auto; text-align: center;">Image Gallery</h3>
 				<div class="nav-content mb-5">
 					<div class="container">
 						<div class="row" style="display: flex;
@@ -1843,15 +1867,13 @@
 		<div class="tab-pane" id="tab13">
 			<div class="container">
 				<h2 class="text-center mt-5 pt-3" style="color: #850209;">Technical Association</h2>
-				<div class="nav-content">
-					<p>
+				<div class="nav-content mt-5">
+					<p style="font-weight: 500;">
 						Department Association - Society of Computers for Ultimate
 						Diligence (SCUD) was started in the year 2002. SCUD team conducts
 						regularly technical fests, workshops, and guest lectures for the
 						benefit of students.
 					</p>
-
-					id="pdfDOWNLOADER11"
 					<details open>
 						<summary>SCUD Activities during the year 2022-23</summary>
 						<ul>
@@ -1874,6 +1896,7 @@
 				</div>
 
 				<!-- Image Carousel Placeholder -->
+				<div class="tab-content">
 				<h1 class="text-center">Images</h1>
 				<div class="nav-content">
 					<div class="container">
@@ -2033,12 +2056,13 @@
 				</div>
 			</div>
 		</div>
+		</div>
 		<!---------------------------------------TAB 13 ENDS-------------------------------->
 
 		<!----------------------------------TAB 14 STARTS--------------------------------------->
 		<div class="tab-pane" id="tab14">
 			<div class="container">
-				<h2 class="text-center mt-5 pt-3" style="color: #850209;">Training Activities</h2>
+				<h2 class="text-center pt-3 mb-5" style="color: #850209;">Training Activities</h2>
 
 				<details open>
 					<summary>Training Activities during the Academic Year 2022-2023</summary>
@@ -2063,7 +2087,7 @@
 
 				
 				<!-- Responsive Image Gallery -->
-				<div class="gallery">
+				<div class="gallery tab-content">
 					<div class="nav-content">
 						<div class="container">
 							<div class="row" style="display: flex;
@@ -2320,7 +2344,7 @@
 			<div class="tab-content" style="border-width: 2px; ;">
 				<div class="container mt-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 					<h2 class="text-center mt-5 pt-3" style="color: #850209;">Hackthons</h2>
-					<p>
+					<p style="font-weight: 500;">
 						A 24-hour student hackathon is an event where students come together to collaborate, innovate, and
 						create
 						projects within a short time frame. These hackathons have gained immense popularity in recent years,
@@ -2328,40 +2352,40 @@
 						they hold significant importance for students for several reasons:
 					</p>
 					<ul>
-						<li>Hands-on learning: Hackathons provide students with a unique opportunity to engage in hands-on
+						<li><strong>➟ </strong>Hands-on learning: Hackathons provide students with a unique opportunity to engage in hands-on
 							learning. They encourage participants to apply their knowledge and skills to real-world problems and
 							challenges. It allows students to go beyond theoretical knowledge and gain practical experience by
 							working on a project from start to finish within a limited time.</li>
-						<li>Collaboration and teamwork: Hackathons foster collaboration and teamwork among students.
+						<li><strong>➟ </strong>Collaboration and teamwork: Hackathons foster collaboration and teamwork among students.
 							Participants
 							usually form teams, bringing together individuals with diverse backgrounds and expertise. Working
 							together, they learn to communicate effectively, leverage each other's strengths, and tackle complex
 							problems collectively. The experience of collaborating with peers from different disciplines helps
 							develop essential teamwork and interpersonal skills.</li>
-						<li>Innovation and creativity: The time constraint of a 24-hour hackathon encourages participants to
+						<li><strong>➟ </strong>Innovation and creativity: The time constraint of a 24-hour hackathon encourages participants to
 							think
 							innovatively and creatively. Students are often required to come up with novel solutions to problems
 							or
 							create something entirely new within a limited timeframe. This pressure fuels innovation and pushes
 							participants to explore unconventional ideas, leading to the development of unique projects.</li>
-						<li>Networking and industry exposure: Student hackathons often attract participants, mentors, and
+						<li><strong>➟ </strong>Networking and industry exposure: Student hackathons often attract participants, mentors, and
 							judges
 							from various industries and organizations. This provides an excellent networking opportunity for
 							students to connect with professionals, potential employers, and like-minded peers. Building
 							connections
 							during a hackathon can lead to future internships, job opportunities, or collaborations on other
 							projects.</li>
-						<li>Skill development: Hackathons offer a platform for students to enhance their existing skills and
+						<li><strong>➟ </strong>Skill development: Hackathons offer a platform for students to enhance their existing skills and
 							acquire new ones. During the event, participants may have to learn and use new technologies,
 							programming
 							languages, or tools to complete their projects. This process helps broaden their skillset, exposes
 							them
 							to different technologies, and allows them to experiment with cutting-edge tools and platforms.</li>
-						<li>Resume/portfolio enhancement: Participating in hackathons adds value to a student's resume or
+						<li><strong>➟ </strong>Resume/portfolio enhancement: Participating in hackathons adds value to a student's resume or
 							portfolio. It demonstrates their passion for learning, problem-solving ability, teamwork skills, and
 							ability to work under pressure. Employers and educational institutions often consider hackathon
 							experience as a strong indicator of a student's practical skills and motivation.</li>
-						<li>Recognition and awards: Many hackathons offer prizes, recognition, or opportunities for
+						<li><strong>➟ </strong>Recognition and awards: Many hackathons offer prizes, recognition, or opportunities for
 							participants
 							to showcase their projects to a wider audience. Winning or being recognized in a hackathon can boost
 							a
@@ -2475,7 +2499,7 @@
 					<div class="container mt-4 content"
 						style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 						<h2 class="text-center mt-5 pt-3" style="color: #850209;">e-Resources</h2>
-						<p>Innovations by the Faculty in Teaching and Learning. Activities of the department towards
+						<p style="font-weight: 500;">Innovations by the Faculty in Teaching and Learning. Activities of the department towards
 							improvement
 							in
 							teaching-learning are indicated in the office records as well as on the college website.
@@ -2484,29 +2508,34 @@
 							for
 							reproduction, further improvement, and review.</p>
 
-						<p>Some of the methods adopted by the faculty members in Teaching & Learning are:</p>
-						<ul>
-							<li>Presentations using PPT, wherever necessary.</li>
-							<li>Technical videos for demonstration of certain concepts.</li>
-							<li>Usage of Software's like Rational Rose, R Software to demonstrate the concepts
-								practically.
-							</li>
-							<li>Use of E-Learning Resources like NPTEL lectures, Online journals, and Online lectures
-								like
-								QEEE &
-								MOOCS for effective learning.</li>
-							<li>Providing Question bank with short answer questions and quiz questions.</li>
-							<li>Student paper and poster presentations.</li>
-							<li>Student seminars.</li>
-							<li>Conducting peer group learning to encourage the slow learners.</li>
-							<li>Student participation in skill tests and technical events.</li>
-							<li>To incorporate real-time problem-solving skills, we are using online tools like EBOX,
-								EDYST
-								etc.
-							</li>
+						<p style="font-weight: 500;">Some of the methods adopted by the faculty members in Teaching & Learning are:</p>
+						<details open>
+						<summary>Innovations in Teaching and Learning</summary>
+						<div class="nav-content">
+							<ul>
+								<li>Project Based Learning</li>
+								<li>Z TO A Approach</li>
+								<li>NPTEL Web and Video Courses</li>
+								<li>PPTs</li>
+								<li>Question Banks</li>
+								<li>Mind Map</li>
 						</ul>
+						</div>
+					</details>
+					<details>
+						<summary>Tools used in Teaching and Learning</summary>
+						<div class="nav-content">
+							<ul>
+								<li>LMS</li>
+								<li>Conduira</li>
+								<li>PEARSON MePro</li>
+								<li>EBox</li>
+								<li>Edyst</li>
+							</ul>
+						</div>
+					</details>
 
-						<h3>(i) Innovations in Teaching and Learning</h3>
+						<!-- <h3>(i) Innovations in Teaching and Learning</h3>
 						<ul>
 							<li>Project Based Learning</li>
 							<li>Z TO A Approach</li>
@@ -2514,19 +2543,22 @@
 							<li>PPTs</li>
 							<li>Question Banks</li>
 							<li>Mind Map</li>
-						</ul>
+						</ul> -->
 
-						<h3>(ii) Tools used in Teaching and Learning</h3>
+						<!-- <h3>(ii) Tools used in Teaching and Learning</h3>
 						<ul>
 							<li>LMS</li>
 							<li>Conduira</li>
 							<li>PEARSON MePro</li>
 							<li>EBox</li>
 							<li>Edyst</li>
-						</ul>
-					</div>
-					<h3 class="text">V20- Subjects</h3>
-					<div style="display: flex;justify-content: center; align-items: center;">
+						</ul> -->
+
+
+					<!--V20 subjects table-->
+					<details>
+						<summary>V20 - Subjects</summary>
+						<div style="display: flex;justify-content: center; align-items: center;">
 						<div class="table-responsive table-striped tab4-table mb-4">
 							<table class="table tab4-table">
 								<thead class="table-header">
@@ -2656,10 +2688,12 @@
 							</table>
 						</div>
 					</div>
+					</details>
 
 					<!-- V18- Subjects Table -->
-					<h3 class="text">V18- Subjects</h3>
-					<div style="display: flex;justify-content: center; align-items: center;">
+					<details>
+						<summary>V18 - Subjects</summary>
+						<div style="display: flex;justify-content: center; align-items: center;">
 						<div class="table-responsive mb-4 table-striped ">
 							<table class="table tab4-table">
 								<thead class="table-header">
@@ -2903,9 +2937,12 @@
 							</table>
 						</div>
 					</div>
+					</details>
+
 					<!-- R16- Subjects Table -->
-					<h3 class="text">R16- Subjects</h3>
-					<div style="display: flex;justify-content: center; align-items: center;">
+					<details>
+						<summary>R16 - Subjects</summary>
+						<div style="display: flex;justify-content: center; align-items: center;">
 						<div class="table-responsive table-striped mb-4">
 							<table class="table tab4-table">
 								<thead class="table-header">
@@ -3093,10 +3130,12 @@
 							</table>
 						</div>
 					</div>
+					</details>
 
 					<!-- R13- Subjects Table -->
-					<h3 class="text">R13- Subjects</h3>
-					<div style="display: flex;justify-content: center; align-items: center;">
+					<details>
+						<summary>R13 - Subjects</summary>
+						<div style="display: flex;justify-content: center; align-items: center;">
 						<div class="table-responsive table-striped mb-4">
 							<table class="table tab4-table">
 								<thead class="table-header">
@@ -3184,7 +3223,8 @@
 							</table>
 						</div>
 					</div>
-
+					</details>
+				</div>
 				</div>
 
 
