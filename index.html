@@ -4234,94 +4234,70 @@
 
 	<!-- Javascript -->
 	<script>
-		// J to handle tab/accordion behavior
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get all tab links and accordion buttons
-			const tabLinks = document.querySelectorAll(".nav-link");
-			const accordionCards = document.querySelectorAll(".accordion .card");
+			function show(id) {
+				const contentContainer = document.querySelector("#content");
+				const selectedTab = document.querySelector(id);
 
-			// Add click event listeners to tab links
-			tabLinks.forEach(function (link) {
-				link.addEventListener("click", function () {
-					// Hide all tab content
-					document.querySelectorAll(".tab-pane").forEach(function (pane) {
-						pane.classList.remove("show", "active");
-					});
-
-					// Show the selected tab content
-					const targetId = link.getAttribute("data-bs-target").replace("#", "");
-					document.getElementById(targetId).classList.add("show", "active");
-				});
-			});
-
-			// Add click event listeners to accordion cards
-			accordionCards.forEach(function (card) {
-				card.addEventListener("click", function () {
-					// Hide all accordion content
-					document.querySelectorAll(".accordion-content .card .collapse").forEach(function (collapse) {
-						collapse.classList.remove("show");
-					});
-
-					// Show the selected accordion content
-					const targetId = card.getAttribute("data-bs-target").replace("#", "");
-					document.getElementById(targetId).classList.add("show");
-				});
-			});
-		});
-
-	</script>
-
-
-	<!--  -->
-
-	<script>
-		function show(id) {
-			const contentContainer = document.querySelector("#content");
-			const selectedTab = document.querySelector(id);
-
-			if (selectedTab) {
-				// Replace the content of #content with the selected tab's content
-				contentContainer.innerHTML = selectedTab.innerHTML;
-			}
-			document.querySelector(".sidebar").classList.remove("active");
-			removeActiveFromAnchors();
-			// Remove the overlay
-			document.querySelector(".overlay").classList.remove("active");
-		}
-
-		const dismissButton = document.querySelector(".dismiss");
-		const contentContainer = document.querySelector("#content");
-
-		dismissButton.addEventListener("click", function () {
-			// Hide the sidebar and reset active states
-			document.querySelector(".sidebar").classList.remove("active");
-			removeActiveFromAnchors();
-
-			// Restore the original content in the content container
-
-		});
-
-		const originalContentHTML = contentContainer.innerHTML;
-
-		function removeActiveFromAnchors() {
-			const anchors = document.querySelectorAll(".list-unstyled.components li a");
-			anchors.forEach((anchor) => {
-				anchor.classList.remove("active");
-			});
-
-		}
-
-		// Add click event listeners to navlinks
-		const navlinks = document.querySelectorAll(".list-unstyled.components li a");
-		navlinks.forEach((link) => {
-			link.addEventListener("click", function (e) {
-				e.preventDefault();
+				if (selectedTab) {
+					// Replace the content of #content with the selected tab's content
+					contentContainer.innerHTML = selectedTab.innerHTML;
+				}
+				document.querySelector(".sidebar").classList.remove("active");
 				removeActiveFromAnchors();
-				this.classList.add("active");
-				show(this.getAttribute("href"));
+				// Remove the overlay
+				document.querySelector(".overlay").classList.remove("active");
+			}
+
+			const dismissButton = document.querySelector(".dismiss");
+			const contentContainer = document.querySelector("#content");
+
+			dismissButton.addEventListener("click", function () {
+				// Hide the sidebar and reset active states
+				document.querySelector(".sidebar").classList.remove("active");
+				removeActiveFromAnchors();
+
+				// Restore the original content in the content container
+
 			});
-		});
-	</script>
+
+			const originalContentHTML = contentContainer.innerHTML;
+
+			function removeActiveFromAnchors() {
+				const anchors = document.querySelectorAll(".list-unstyled.components li a");
+				anchors.forEach((anchor) => {
+					anchor.classList.remove("active");
+				});
+
+			}
+
+			function removeActiveFromLis() {
+				const anchors = document.querySelectorAll(".list-unstyled.components li");
+				anchors.forEach((anchor) => {
+					anchor.classList.remove("active");
+				});
+
+			}
+
+			// Add click event listeners to navlinks
+			const navlinks = document.querySelectorAll(".list-unstyled.components li a");
+			navlinks.forEach((link) => {
+				link.addEventListener("click", function (e) {
+					e.preventDefault();
+					removeActiveFromAnchors();
+					this.classList.add("active");
+					show(this.getAttribute("href"));
+				});
+			});
+			const navlink = document.querySelectorAll(".list-unstyled.components li ");
+			navlink.forEach((link) => {
+				link.addEventListener("click", function (e) {
+					e.preventDefault();
+					removeActiveFromLis();
+					this.classList.add("active");
+					show(this.getAttribute("href"));
+				});
+			});
+		</script>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -4344,6 +4320,7 @@
 	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 
+	
 </body>
 
 </html>
