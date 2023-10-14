@@ -1794,22 +1794,11 @@ img {
 
 ul{
 	list-style-type: none !important;
-	text-align: center;
 }
 ol{
 	list-style-type: none !important;
-	text-align: center;
-}
-ul li{
-	text-align: center;
-	font-weight: 500;
-}
-ol li{
-	text-align: center;
-	font-weight: 500;
 }
 
 li {
-	text-align: center;
 	font-weight: 500;
 }
