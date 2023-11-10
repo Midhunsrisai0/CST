@@ -1,19 +1,12 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	font-weight: 300;
 	color: #888;
 	line-height: 30px;
 	text-align: center;
 }
-
-strong {
-	font-weight: 500;
-}
-
-
 strong{
-	color: #850209;
+	/* color: #850209; */
 	font-weight: 500;
 }
 
@@ -1605,6 +1598,7 @@ details {
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 	margin-bottom: 20px;
 	transition: all 1s ease-in-out;
+	text-align: center;
 }
 
 .table tr {
@@ -1627,6 +1621,7 @@ summary {
 	align-items: center;
 	transition: all 0.2s;
 	position: relative;
+	text-align: center;
 	/* Add position relative */
 }
 
@@ -1797,8 +1792,4 @@ ul{
 }
 ol{
 	list-style-type: none !important;
-}
-
-li {
-	font-weight: 500;
 }
